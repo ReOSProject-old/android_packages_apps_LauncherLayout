@@ -13,8 +13,17 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!-- Google-specific version of Launcher3/res/xml/default_workspace.xml -->
 <favorites>
+<!-- Google-specific version of Launcher3/res/xml/default_workspace.xml -->
+    <!-- ReOS Briefing Widget -->
+    <appwidget
+        launcher:packageName="com.re.briefingwidget"
+        launcher:className="com.re.briefingwidget.ClockWidgetProvider"
+        launcher:screen="1"
+        launcher:x="0"
+        launcher:y="0"
+        launcher:spanX="6"
+        launcher:spanY="2" />
   <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
   <!-- Dialer Messaging [All Apps] Browser Camera -->
   <favorite container="-101" screen="0" x="0" y="0" packageName="com.android.dialer" className="com.android.dialer.DialtactsActivity"/>
